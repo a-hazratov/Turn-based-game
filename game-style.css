@@ -1,0 +1,70 @@
+
+
+ .side {
+  display: inline-block;
+  border: 1px black solid;
+  border-radius: 8px;
+  width: 25%;
+  height: 400px;
+  vertical-align: top;
+  margin-top: 40px;
+  margin-right: 20px;
+  margin-left: 5px;
+  background-color: #008080;
+  }
+
+  .player {
+    text-align: center;
+  }
+  .player .button{
+      display:none;
+  }
+  .player-turn{
+      box-shadow: 7px 7px 5px 2px grey;
+      background-color: #00a0a0;
+  }
+  .player-turn .button{
+      display:block;
+  }
+  .move-mode .player .button,
+  .initial-mode .player .button {
+      display:none;
+  }
+
+ .win-game{
+     display: none;
+ }
+
+  
+ .game-map {
+  display: inline-block;
+  width: 600px;
+  height: 600px;
+  text-align: center;
+  margin-right: 5px;
+ }
+
+ h1 {
+  text-align: center;
+ }
+
+
+    
+
+    #start-game {
+      background-color: #008080;
+      border-radius: 2px;
+      color: white;
+      padding: 10px 22px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+
+    }
+    .button{
+      text-align: center;
+    }
+

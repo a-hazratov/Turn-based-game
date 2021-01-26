@@ -1,0 +1,78 @@
+<!--HTML file-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="game-style.css" rel="stylesheet">
+    <title>Board Game</title>
+  
+  
+
+  </head>
+  <body class="initial-mode">
+   <section>
+    <div class="side player" id="player1">
+      <h1>Player 1<span class = 'win-game'> wins the fight</span></h1>
+      <div class='player'>
+        <img src="player_1_main.png">
+      </div>
+      <ul>
+        <li>
+            <h2>Health: <span class = 'health'>100</span></h2>
+        </li>
+        <li>
+          <h2>Weapon:<span class = 'weapons'></span></h2>
+        </li>
+      </ul>
+        <div class="button">
+            <button type="button" class="attack">Attack</button>
+            <button type="button" class="defend">Defend</button>
+
+        </div>
+    </div>
+ 	 <div class="game-map">
+        
+  	   <canvas id="canvas" width="575" height="575"
+  	    style= "border:2px solid black;">
+  		</canvas>
+      
+    </div> 
+    <div class="side player" id="player2">
+      <h1>Player 2<span class = 'win-game'> wins the fight</span></h1>
+      <div class='player'>
+        <img src="player_2_main.png">
+      </div>
+      <ul>
+        <li>
+            <h2>Health: <span class = 'health' >100</span></h2>
+        </li>
+        <li>
+          <h2>Weapon: <span class = 'weapons'></span></h2>
+        </li>
+      </ul>
+        <div class="button">
+            <button type="button" class="attack">Attack</button>
+            <button type="button" class="defend">Defend</button>
+
+        </div>
+    </div>
+  </section>
+    <div class="button"> 
+   <button type="button" id="start-game">Start the game</button>
+   </div>
+
+
+  	
+
+ <script type="text/javascript" src="jquery-3.js"></script>
+
+   <script type="text/javascript" src="js/Field.js"></script>
+   <script type="text/javascript" src="js/Item.js"></script>
+   <script type="text/javascript" src="js/Player.js"></script>
+   <script type="text/javascript" src="js/Weapon.js"></script>
+   <script type="text/javascript" src="game.js"></script>
+  </body>
+  </html>
